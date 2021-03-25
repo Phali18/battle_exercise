@@ -9,7 +9,6 @@ class Battle < Sinatra::Base
 
   enable :sessions
 
-  Dir[settings.root(+'/lib/*.rb')].each { |file| require file }
 
   get '/' do
     erb(:index)
